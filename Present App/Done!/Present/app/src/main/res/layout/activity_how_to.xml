@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="vedanshudahiya.present.HowTo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How To ?"
+        android:id="@+id/textView8"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Click on the name at the bottom to see contact details for any Queries/Feedback(Report Bugs)"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Footer"
+        android:id="@+id/textView9"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="footerClicked" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView48"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Setting Up Classes"
+                android:id="@+id/textView32"
+                android:textStyle="bold"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to TimeTable and click on Add Class.\n\n2. Set the Class Name , Starting Date (i.e. the date from which the Class and attendance begins) and Number of classes per week.\n\n3. Set details for each schedule for the week and click on Add Class."
+                android:id="@+id/textView37"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView32"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Edit Classes"
+                android:id="@+id/textView38"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_below="@+id/textView37"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to TimeTable and click on individual class name to see class Details.\n\n2. Schedules can be addded via Add Schedule.\n\n*Schedules can't be edited/deleted.Please verify before adding. However,if you make a mistake,you can always click on N.A. when its Attendance comes up.*"
+                android:id="@+id/textView39"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView38"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Delete Classes"
+                android:id="@+id/textView40"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_below="@+id/textView39"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to TimeTable and click on individual class name to see class Details.\n\n2. Click on Delete Class.\n\n*Deleting class also deletes the attached Attendance record.Choose Carefully!*"
+                android:id="@+id/textView41"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView40"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Mark Attendance"
+                android:id="@+id/textView42"
+                android:textStyle="bold"
+                android:textColor="@color/mediumpurple"
+                android:layout_below="@+id/textView41"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to Attendance and select Dashboard once you have properly set up the classs.\n\n2. At the time of a class,a dashboard item will appear here prompting the user to mark Attendance : Present , Absent or Not Applicable (dismisses the class i.e. no effect on total).\n\n*Dashboard is updated hourly and will give a Notification when a class instance is available.However,if you are feeling impatient,you can always go to Dashboard and refresh Manually as much and whenever you like*"
+                android:id="@+id/textView43"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView42"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Check Attendance"
+                android:id="@+id/textView44"
+                android:textStyle="bold"
+                android:textColor="@color/sandybrown"
+                android:layout_below="@+id/textView43"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to Attendance and select Check Attendance.\n\n2. You can see a list of registered classes and available Attendance % for each.\n\n3. Click on class for which you have already entered attendance to see details (Attendance Sheet)."
+                android:id="@+id/textView45"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView44"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Adjust Attendance"
+                android:id="@+id/textView46"
+                android:textStyle="bold"
+                android:textColor="@color/darkkhaki"
+                android:layout_below="@+id/textView45"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Go to Attendance, select Check Attendance and click on class for which you wish to adjust Attendance.\n\n2. To change a particular entry in Attendance Sheet,long click on that particular entry and select new attendance value(select NA to dismiss that attendance entry).\n\n3. In case of extra classes(or unaccounted classes due to unforeseen error) , you can adjust attendance manually (i.e. add or subtract Present/Absent).\n\n*Go back to Check Attendance to see the change in Attendance %*"
+                android:id="@+id/textView47"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView46"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/lightgrey"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

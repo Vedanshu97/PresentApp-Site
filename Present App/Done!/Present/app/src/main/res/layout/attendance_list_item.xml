@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CN"
+            android:id="@+id/className"
+            android:textColor="#ff00af00"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Att"
+            android:id="@+id/Attendance"
+            android:textColor="#ff00af00"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total"
+            android:id="@+id/total"
+            android:textColor="#ff000000"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".13"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="P"
+            android:id="@+id/present"
+            android:textColor="#ff0c16b0"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ab"
+            android:id="@+id/absent"
+            android:textColor="#fffa3232"
+            android:gravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>

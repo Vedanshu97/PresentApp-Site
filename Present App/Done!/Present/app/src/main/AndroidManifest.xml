@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vedanshudahiya.present" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Attendance"
+            android:label="@string/title_activity_attendance"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TimeTable"
+            android:label="@string/title_activity_time_table"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HowTo"
+            android:label="@string/title_activity_how_to"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewAttendance"
+            android:label="@string/title_activity_view_attendance"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddClass"
+            android:label="@string/title_activity_add_class"
+            android:parentActivityName=".TimeTable"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.TimeTable" />
+        </activity>
+        <activity
+            android:name=".ViewTimeTable"
+            android:label="@string/title_activity_view_time_table"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewClassSchedule"
+            android:label="@string/title_activity_view_class_schedule" >
+        </activity>
+        <activity
+            android:name=".dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:parentActivityName=".ViewAttendance"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.ViewAttendance" />
+        </activity>
+        <activity
+            android:name=".checkAttendance"
+            android:label="@string/title_activity_check_attendance"
+            android:parentActivityName=".ViewAttendance" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.ViewAttendance" />
+        </activity>
+        <activity
+            android:name=".classAttendanceSheet"
+            android:label="@string/title_activity_class_attendance_sheet"
+            android:parentActivityName=".checkAttendance" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vedanshudahiya.present.checkAttendance" />
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

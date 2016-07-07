@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:longClickable="true"
+    android:paddingTop="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/containerAS"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="dt"
+            android:id="@+id/dateAS"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="d"
+            android:id="@+id/dayAS"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="t"
+            android:id="@+id/timeAS"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="v"
+            android:id="@+id/valueAS"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

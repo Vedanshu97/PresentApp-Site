@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="vedanshudahiya.present.classAttendanceSheet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="cn AS"
+        android:id="@+id/SingleClassName"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/SingleClassName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="*Long Click to Change Attendance Value*"
+        android:id="@+id/textView36"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/classAttendanceSheet"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView33"
+        android:layout_below="@+id/textView36"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:longClickable="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ManualLL"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/manualLL2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".55"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Manual Present(s) :"
+            android:id="@+id/textView34"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/MAP"
+            android:gravity="center"
+            android:textColor="@color/darkgreen" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".15"
+            android:text="+"
+            android:id="@+id/addPresent"
+            android:onClick="ManualStuff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".15"
+            android:text="-"
+            android:id="@+id/subPresent"
+            android:onClick="ManualStuff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/manualLL2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".55"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Manual Absent(s) :"
+            android:id="@+id/textView35"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/MAA"
+            android:gravity="center"
+            android:textColor="@color/darkred" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".15"
+            android:text="+"
+            android:id="@+id/addAbsent"
+            android:onClick="ManualStuff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".15"
+            android:text="-"
+            android:id="@+id/subAbsent"
+            android:onClick="ManualStuff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Extra Class(es) ? Manually Adjust Attendance..."
+        android:id="@+id/textView33"
+        android:layout_above="@+id/ManualLL"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
